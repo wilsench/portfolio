@@ -1,0 +1,273 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-margin-top: 5em;
+}
+
+$black-color : #404040;
+$orange-color : #F99417;
+$grey-color : #BDBDBD;
+
+
+.text-orange {
+    color: $orange-color;
+}
+
+.button-orange {
+    background-color: $orange-color;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    transition: .3s;
+}
+.button-orange:hover {
+    color: white;
+    padding-left: 3rem;
+    transition: .3s;
+    background-color: $black-color;
+}
+.body {
+    color: $black-color;
+}
+.portfolio {
+    .navbar {
+        z-index: 111;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        padding: 1.5rem 10rem;
+
+        .start {
+            width: 70%;
+            p {
+                font-weight: 600;
+                letter-spacing: 3.5px;
+            }
+        }
+        .end {
+            width: 30%;
+            display: flex;
+            justify-content: space-between;
+            .nav-menu {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    color: $black-color;
+                }
+                a:hover {
+                    color: $orange-color;
+                }
+
+                .contact {
+                    color: $orange-color;
+                    padding: 3px 20px;
+                    border-radius: 5px;
+                    border: 1px solid $orange-color;
+                    transition: .2s;
+                }
+                .contact:hover {
+                    transition: .2s;
+                    color: white;
+                    background-color: $orange-color;
+                }
+            }
+        }
+    }
+    #hero {
+        padding: 0 10rem;
+        min-height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        .start {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            gap: 7rem;
+            padding-top: 10rem;
+            .text-hero {
+                h1 {
+                    font-size: 92px;
+                    margin-bottom: 0;
+                }
+                h4 {
+                    font-weight: 400;
+                }
+            }
+            .sosmed {
+                .link {
+                    a {
+                        color: $grey-color;
+                    }
+                    a:hover {
+                        color: $orange-color;
+                    }
+                }
+            }
+        }
+    }
+    #about {
+        background-color: $orange-color;
+        min-height: max-content;
+        padding-top: 2rem;
+        display: flex;
+        width: 100%;
+        .start {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            background-color: $orange-color;
+        }
+        .end {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            width: 50%;
+            padding-right: 10rem;
+            .title {
+                text-align: right;
+                h1 {
+                    line-height: 1;
+                    font-size: 92px;
+                    width: 5ch;
+                }
+            }
+            .desc {
+                text-align: right;
+                p {
+                    width: 579px;
+                }
+            }
+        }
+    }
+    #projects {
+        min-height: 100vh;
+        padding: 4rem 10rem;
+
+        .title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 8rem;
+            .content-start {
+                display: flex;
+                justify-content: space-between;
+                gap: 2rem;
+                .start {
+                    width:40%;
+                    border-left: 10px solid $orange-color;
+                    padding-left: 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h1 {
+                        font-size: 92px;
+                        font-weight: 600;
+                    }
+                    p {
+                        max-width: 70%;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+                }
+                .end {
+                    width: 60%;
+                }
+            }
+            .content-end {
+                display: flex;
+                justify-content: space-between;
+                gap: 4rem;
+                width: 100%;
+                .start {
+                    width: 60%;
+                }
+                .end {
+                    width: 40%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: end;
+                    text-align: right;
+                    h1 {
+                        font-size: 92px;
+                        font-weight: 600;
+                    }
+                    p {
+                        width: 80%;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    #contact {
+        background-color: #fff8f861;
+        min-height: 50vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        user-select: none;
+        .start {
+            text-align: center;
+        }
+        .end {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            text-align: center;
+            .instagram_button {
+                width: 100%;
+                border-radius: 50rem;
+                border: 1px solid #C5296F;
+                background-color: white;
+                padding: 9px 10rem;
+                transition: .2s;
+            }
+            .instagram_button:hover {
+                transform: scale(0.97);
+                transition: .2s;
+            }
+            .whatsapp_button {
+                width: 100%;
+                border-radius: 50rem;
+                background-color: #2AB318;
+                padding: 9px 10rem;
+                transition: .2s;
+            }
+            .whatsapp_button:hover {
+                transform: scale(0.97);
+                transition: .2s;
+            }
+            .linkedin_button {
+                width: 100%;
+                border-radius: 50rem;
+                background-color: #465F98;
+                padding: 10px 10rem;
+                transition: .2s;
+            }
+            .linkedin_button:hover {
+                transform: scale(0.97);
+                transition: .2s;
+            }
+        }
+    }
+    #footer {
+        background-color: $orange-color;
+        width: 100%;
+        min-height: 10vh;
+    }
+}

@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-margin-top: 5em;
+}
+
+.text-orange {
+  color: #F99417;
+}
+
+.button-orange {
+  background-color: #F99417;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  transition: 0.3s;
+}
+
+.button-orange:hover {
+  color: white;
+  padding-left: 3rem;
+  transition: 0.3s;
+  background-color: #404040;
+}
+
+.body {
+  color: #404040;
+}
+
+.portfolio .navbar {
+  z-index: 111;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  padding: 1.5rem 10rem;
+}
+.portfolio .navbar .start {
+  width: 70%;
+}
+.portfolio .navbar .start p {
+  font-weight: 600;
+  letter-spacing: 3.5px;
+}
+.portfolio .navbar .end {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio .navbar .end .nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio .navbar .end .nav-menu a {
+  color: #404040;
+}
+.portfolio .navbar .end .nav-menu a:hover {
+  color: #F99417;
+}
+.portfolio .navbar .end .nav-menu .contact {
+  color: #F99417;
+  padding: 3px 20px;
+  border-radius: 5px;
+  border: 1px solid #F99417;
+  transition: 0.2s;
+}
+.portfolio .navbar .end .nav-menu .contact:hover {
+  transition: 0.2s;
+  color: white;
+  background-color: #F99417;
+}
+.portfolio #hero {
+  padding: 0 10rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio #hero .start {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 7rem;
+  padding-top: 10rem;
+}
+.portfolio #hero .start .text-hero h1 {
+  font-size: 92px;
+  margin-bottom: 0;
+}
+.portfolio #hero .start .text-hero h4 {
+  font-weight: 400;
+}
+.portfolio #hero .start .sosmed .link a {
+  color: #BDBDBD;
+}
+.portfolio #hero .start .sosmed .link a:hover {
+  color: #F99417;
+}
+.portfolio #about {
+  background-color: #F99417;
+  min-height: max-content;
+  padding-top: 2rem;
+  display: flex;
+  width: 100%;
+}
+.portfolio #about .start {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  background-color: #F99417;
+}
+.portfolio #about .end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  width: 50%;
+  padding-right: 10rem;
+}
+.portfolio #about .end .title {
+  text-align: right;
+}
+.portfolio #about .end .title h1 {
+  line-height: 1;
+  font-size: 92px;
+  width: 5ch;
+}
+.portfolio #about .end .desc {
+  text-align: right;
+}
+.portfolio #about .end .desc p {
+  width: 579px;
+}
+.portfolio #projects {
+  min-height: 100vh;
+  padding: 4rem 10rem;
+}
+.portfolio #projects .title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.portfolio #projects .content {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.portfolio #projects .content .content-start {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.portfolio #projects .content .content-start .start {
+  width: 40%;
+  border-left: 10px solid #F99417;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.portfolio #projects .content .content-start .start h1 {
+  font-size: 92px;
+  font-weight: 600;
+}
+.portfolio #projects .content .content-start .start p {
+  max-width: 70%;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.portfolio #projects .content .content-start .end {
+  width: 60%;
+}
+.portfolio #projects .content .content-end {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  width: 100%;
+}
+.portfolio #projects .content .content-end .start {
+  width: 60%;
+}
+.portfolio #projects .content .content-end .end {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  text-align: right;
+}
+.portfolio #projects .content .content-end .end h1 {
+  font-size: 92px;
+  font-weight: 600;
+}
+.portfolio #projects .content .content-end .end p {
+  width: 80%;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+.portfolio #contact {
+  background-color: rgba(255, 248, 248, 0.3803921569);
+  min-height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  user-select: none;
+}
+.portfolio #contact .start {
+  text-align: center;
+}
+.portfolio #contact .end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.portfolio #contact .end .instagram_button {
+  width: 100%;
+  border-radius: 50rem;
+  border: 1px solid #C5296F;
+  background-color: white;
+  padding: 9px 10rem;
+  transition: 0.2s;
+}
+.portfolio #contact .end .instagram_button:hover {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+.portfolio #contact .end .whatsapp_button {
+  width: 100%;
+  border-radius: 50rem;
+  background-color: #2AB318;
+  padding: 9px 10rem;
+  transition: 0.2s;
+}
+.portfolio #contact .end .whatsapp_button:hover {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+.portfolio #contact .end .linkedin_button {
+  width: 100%;
+  border-radius: 50rem;
+  background-color: #465F98;
+  padding: 10px 10rem;
+  transition: 0.2s;
+}
+.portfolio #contact .end .linkedin_button:hover {
+  transform: scale(0.97);
+  transition: 0.2s;
+}
+.portfolio #footer {
+  background-color: #F99417;
+  width: 100%;
+  min-height: 10vh;
+}/*# sourceMappingURL=stylesheet.css.map */
